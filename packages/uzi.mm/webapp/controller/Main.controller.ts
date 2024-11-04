@@ -31,12 +31,13 @@ export default class Main extends BaseController {
 
 	public back(): void {
 		//this.onNavBack();
-		this.getRouter().navTo("sd");
+
+		var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+		oRouter.navTo("sd"); // 'sd' rotasına yönlendirme
 	}
 
 	public navigateToSD(materialNo: string): void {
-		this.getRouter().navTo("sd", {
-			materialNo: materialNo,
-		});
+		var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+		oRouter.navTo("sd"); // 'sd' rotasına yönlendirme
 	}
 }
