@@ -1,0 +1,49 @@
+<mvc:View
+  controllerName="uzi.sd.controller.Main"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:core="sap.ui.core"
+>
+  <Page
+    id="mainPage"
+    title="{i18n>appTitle}"
+  >
+    <content>
+      <Table items="{
+        path: 'sd>/data'
+      }">
+        <columns>
+          <Column>
+            <Text text="Material No" />
+          </Column>
+          <Column>
+            <Text text="Material Description" />
+          </Column>
+          <Column>
+            <Text text="Quantity" />
+          </Column>
+          <Column>
+            <Text text="Item No" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <cells>
+              <Text text="{sd>MaterialNo}" />
+              <Text text="{sd>MaterialDesc}" />
+              <Text text="{sd>Quantity}" />
+              <Text text="{sd>ItemNo}" />
+            </cells>
+          </ColumnListItem>
+        </items>
+      </Table>
+      <Button
+        text="{
+          path: 'i18n>btnText'
+        }"
+        press="back"
+      />
+    </content>
+  </Page>
+</mvc:View>

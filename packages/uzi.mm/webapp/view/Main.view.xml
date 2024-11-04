@@ -1,0 +1,45 @@
+<mvc:View
+  controllerName="uzi.mm.controller.Main"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+>
+  <Page
+    id="mainPage"
+    title="{i18n>appTitle}"
+  >
+    <content>
+      <Table items="{
+        path: 'mm>/data'
+      }">
+        <columns>
+          <Column>
+            <Text text="Material No" />
+          </Column>
+          <Column>
+            <Text text="Material Description" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <cells>
+              <Text text="{mm>MaterialNo}" />
+              <Text text="{mm>MaterialDesc}" />
+              <Button
+                press="navigateToSD"
+                text="SD"
+              />
+            </cells>
+          </ColumnListItem>
+        </items>
+      </Table>
+      <!-- Geri Butonu Eklendi -->
+      <Button
+        text="{
+          path: 'i18n>btnText'
+        }"
+        press="back"
+      />
+    </content>
+  </Page>
+</mvc:View>

@@ -1,0 +1,14 @@
+{
+  "name": "showcase-ui5-middleware-ui5",
+  "version": "1.0.0",
+  "description": "UI5 apps for development time",
+  "private": true,
+  "author": "Uzeyr OZCAN",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "npm -w uzi.app start"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

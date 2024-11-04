@@ -1,0 +1,17 @@
+{
+	"generator-ui5-ts-app": {
+		"namespace": "uzi.tsapp",
+		"framework": "OpenUI5",
+		"frameworkVersion": "1.118.0",
+		"author": "Uzeyr OZCAN",
+		"initrepo": false,
+		"tstypes": "@openui5/types",
+		"tstypesVersion": "1.118.0",
+		"appId": "uzi.tsapp",
+		"appURI": "uzi/tsapp",
+		"cdnDomain": "sdk.openui5.org",
+		"defaultTheme": "sap_horizon",
+		"gte11150": true,
+		"setupCompleted": true
+	}
+}
