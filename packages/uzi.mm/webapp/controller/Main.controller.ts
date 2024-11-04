@@ -30,7 +30,8 @@ export default class Main extends BaseController {
 	}
 
 	public back(): void {
-		this.onNavBack();
+		//this.onNavBack();
+		this.getRouter().navTo("sd");
 	}
 
 	public navigateToSD(materialNo: string): void {
